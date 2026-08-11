@@ -24,7 +24,7 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:me@maswafa.my.id"}
   - {title: Github, icon: github, url: "https://github.com/nmwafa/"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/nmwafa"}
 
 comments:
 #  disqus_shortname: ""         # see https://disqus.com
