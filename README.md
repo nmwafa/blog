@@ -4,84 +4,22 @@ permalink: "/about/"
 layout: page
 ---
 
-## Github Pages
+<p align="center"><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXJueG96bnU4ajUwdzc4MjlnM2twdHFidzEzaGtuNnNudnp5ZnIwbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MD0svLSDeudszrNrp0/giphy.gif"></p>
 
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) to `your_username.github.io` and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia lorem id posuere volutpat. Pellentesque luctus, leo eu facilisis scelerisque, est diam consequat velit, quis aliquet metus nunc at justo. Mauris sed nisi lacinia, placerat mauris a, placerat nunc. Maecenas commodo convallis egestas. Vestibulum commodo feugiat metus sed bibendum. Suspendisse in ornare lectus. Donec gravida finibus neque, pellentesque finibus ex rutrum id.
 
-## Features
+Quisque et dui at purus molestie feugiat. Aliquam et aliquet mauris. Vivamus et eros mi. Fusce neque nunc, convallis vitae ullamcorper non, pharetra id eros. Phasellus imperdiet molestie urna, eu consectetur leo tincidunt sed. Donec fringilla suscipit consectetur. Etiam iaculis mauris a sollicitudin placerat. Suspendisse vestibulum orci quis turpis pharetra, at tincidunt justo rhoncus. Sed enim urna, tincidunt a scelerisque eu, euismod quis ex. Praesent est ante, lacinia quis libero eu, finibus pharetra quam. Aenean eu vulputate risus. Nullam vitae felis ac risus finibus placerat. Integer consectetur varius ipsum, at molestie justo sagittis sed. Praesent cursus sollicitudin tortor, a vestibulum arcu pharetra id. Pellentesque molestie fermentum sapien eget auctor. Proin dignissim viverra nisl, a pretium massa tincidunt non.
 
- - dark mode
- - [KaTeX](https://katex.org) included
- - no external ressources
- - optional sidebar
- - archive page
- - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+Suspendisse quis feugiat ante. Morbi eu lacus convallis, imperdiet diam et, blandit nibh. Vivamus condimentum enim ex, eget volutpat sem consectetur sit amet. Nam quam tellus, auctor ac mattis eget, dignissim a eros. Praesent in nulla eget metus molestie sollicitudin sed ac mi. In quis velit efficitur, molestie arcu eget, lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu suscipit augue, et pulvinar leo. Cras efficitur porta nibh, in rhoncus erat venenatis vel. Suspendisse et justo metus. Nulla ornare nunc et nunc varius, vel lacinia augue varius. Sed vel neque vitae nulla cursus tempor. Sed aliquam, ante quis semper vehicula, sapien massa pretium eros, quis dignissim sem justo nec leo. Pellentesque in ante ac tortor ultrices tincidunt sit amet ac sapien.
 
-## Installation
+Quisque felis sem, varius ut tristique vel, facilisis porta ex. Maecenas blandit justo enim, sed porttitor massa vestibulum vel. Proin vitae consequat nunc, a molestie lacus. Cras porttitor ligula ac metus volutpat tincidunt. Duis eu arcu odio. Suspendisse vel iaculis enim. Suspendisse condimentum purus ut eros pellentesque, quis tempus risus faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
 
-To run locally [install Ruby](https://www.ruby-lang.org/en/documentation/installation/) and then run:
+Mauris lacinia felis eu arcu dapibus, et mollis dolor vulputate. Nullam gravida nibh quis elit semper, quis pharetra massa congue. Nullam ut erat non dolor porta tincidunt. Pellentesque non magna sit amet sem faucibus condimentum. Nullam a vestibulum est, ultricies imperdiet mi. Nunc quis tellus nec lorem convallis porta. Curabitur tempor nunc in porttitor convallis. Nunc tempus arcu nec ultricies vulputate. Duis mattis metus et libero consequat lacinia. Proin vitae ex nisl. Morbi euismod ex non pulvinar consectetur.
 
-```
-git clone https://github.com/niklasbuschmann/contrast.git
-cd contrast
-gem install bundler jekyll jekyll-feed
-bundle exec jekyll serve
-```
+Nulla ut aliquet magna, id hendrerit magna. Quisque cursus, massa eget scelerisque lobortis, magna tortor facilisis sapien, eget tristique sem libero eu lectus. Donec nunc augue, sollicitudin eget urna sit amet, semper posuere eros. Phasellus diam est, tempor in bibendum at, laoreet eget ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut ligula dui. Curabitur ac justo ligula. Morbi ante eros, tempus quis massa venenatis, placerat feugiat neque. Integer ac dolor varius, faucibus sem sed, accumsan risus.
 
-## Config
+In at eros vitae orci luctus pharetra ut in lectus. Ut vestibulum finibus ante sit amet elementum. Phasellus nec turpis odio. Suspendisse commodo leo orci, sed scelerisque lacus laoreet vel. Maecenas nec felis pharetra, lobortis lorem nec, ultrices ante. Quisque vitae magna et dui iaculis ullamcorper placerat ut lorem. In hac habitasse platea dictumst. Donec eget dui et velit sodales placerat. Morbi ut molestie nibh, eget rhoncus quam. Sed elit metus, scelerisque quis enim et, egestas lobortis purus. Praesent et magna tortor.
 
-Your `_config.yml` could for example look like this:
+Vestibulum at turpis quam. Sed placerat hendrerit dui hendrerit interdum. Quisque eu nisi ac quam placerat euismod semper at ex. Integer hendrerit laoreet elit. Fusce euismod, ex nec tempor lobortis, arcu odio suscipit tortor, vel consectetur sem lacus a felis. Sed ullamcorper, nisl non pellentesque semper, nisi mi imperdiet orci, viverra malesuada dui nunc a velit. Nunc feugiat, lorem a tincidunt mattis, nunc sapien dictum velit, quis fermentum nisi libero at nisl. Mauris faucibus lorem ut tincidunt rhoncus. Sed blandit urna porttitor, varius elit vel, pellentesque enim. Donec vitae nulla volutpat, efficitur felis ut, lacinia libero. Praesent eget neque enim. Aenean et nunc efficitur, finibus ante eu, volutpat est.
 
-```yaml
-title: "Blog Title"
-author: "Blog Author"
-description: "My blog"
-permalink: /:title/
-lang: "en"
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
-
-# Layout
-
-show_excerpts: true             # show article excerpts instead of archive list on the home page
-show_frame: true                # display a grey frame on large screens
-show_sidebar: false             # show a sidebar instead of the usual header
-show_minimal: false             # remove all clutter
-
-# Menu                          # for available icons see https://fontawesome.com/v5/icons/
-
-navigation:                     # accepts {file, title, url, icon, sidebaricon}
-  - {file: "archive.html", sidebaricon: home}
-  - {file: "README.md", sidebaricon: address-card}
-
-external:                       # accepts {file, title, url, icon, sidebaricon}
-  - {title: Mail, icon: envelope, url: "mailto:author@example.com"}
-  - {title: Github, icon: github, url: "https://github.com/"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
-
-comments:
-#  disqus_shortname: ""         # see https://disqus.com
-#  isso_domain: ""              # see https://isso-comments.de
-
-plugins:
- - jekyll-feed
-```
-
-## Math
-
-Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter. [Jektex](https://github.com/yagarea/jektex) can be used to pre-render math on the server side.
-
-## License
-
-[public domain](http://unlicense.org/)
-
-## Screenshots
-
-![screenshot](https://github.com/user-attachments/assets/8f0ef4bc-f079-495e-8c31-5867b8ccd25c)
-
-![screenshot](https://github.com/user-attachments/assets/e5e6d189-3251-41f4-baba-ff42be65f666)
-
-![screenshot](https://github.com/user-attachments/assets/d31879ae-7113-42be-b580-1e96a2aedd29)
-
-![screenshot](https://github.com/user-attachments/assets/d524ce47-8d8c-473e-afc6-79b34fae63e8)
+Donec gravida nisl sed tristique finibus. Suspendisse non vehicula nulla, egestas placerat lorem. Phasellus dictum vulputate nunc, et placerat purus scelerisque aliquam. Nulla eu lorem consequat, pulvinar urna sit amet, posuere nibh. Praesent mollis diam ut neque imperdiet, eget ullamcorper turpis ullamcorper. Nulla convallis interdum mauris quis efficitur. Vivamus eget enim non felis vulputate bibendum ac ac ipsum. Sed congue posuere malesuada. In dictum metus elit, ut semper justo mattis in. Mauris molestie odio non ex eleifend commodo. Cras quis nisi nunc. Phasellus erat ante, euismod hendrerit laoreet ut, suscipit at risus.
