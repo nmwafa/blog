@@ -5,6 +5,7 @@ layout: post
 
 Setiap kali Anda mengetikkan nama domain seperti `google.com` atau `coursera.org` di peramban (browser), sistem tidak langsung menghubungkan Anda ke server tujuan melalui nama tersebut. Internet bekerja menggunakan alamat angka yang disebut **IP Address**. Di sinilah **DNS (Domain Name System)** berperan sebagai buku telepon internet yang menerjemahkan nama domain yang mudah diingat manusia menjadi IP address yang dipahami oleh mesin.
 
+
 Proses penerjemahan ini melibatkan hierarki beberapa server khusus yang saling bekerja sama. Berikut adalah penjelasan mengenai **5 jenis DNS server utama** dan perannya masing-masing.
 
 ---
