@@ -4,8 +4,6 @@ permalink: "/about/"
 layout: page
 ---
 
-<p align="center"><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXJueG96bnU4ajUwdzc4MjlnM2twdHFidzEzaGtuNnNudnp5ZnIwbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MD0svLSDeudszrNrp0/giphy.gif"></p>
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia lorem id posuere volutpat. Pellentesque luctus, leo eu facilisis scelerisque, est diam consequat velit, quis aliquet metus nunc at justo. Mauris sed nisi lacinia, placerat mauris a, placerat nunc. Maecenas commodo convallis egestas. Vestibulum commodo feugiat metus sed bibendum. Suspendisse in ornare lectus. Donec gravida finibus neque, pellentesque finibus ex rutrum id.
 
 Quisque et dui at purus molestie feugiat. Aliquam et aliquet mauris. Vivamus et eros mi. Fusce neque nunc, convallis vitae ullamcorper non, pharetra id eros. Phasellus imperdiet molestie urna, eu consectetur leo tincidunt sed. Donec fringilla suscipit consectetur. Etiam iaculis mauris a sollicitudin placerat. Suspendisse vestibulum orci quis turpis pharetra, at tincidunt justo rhoncus. Sed enim urna, tincidunt a scelerisque eu, euismod quis ex. Praesent est ante, lacinia quis libero eu, finibus pharetra quam. Aenean eu vulputate risus. Nullam vitae felis ac risus finibus placerat. Integer consectetur varius ipsum, at molestie justo sagittis sed. Praesent cursus sollicitudin tortor, a vestibulum arcu pharetra id. Pellentesque molestie fermentum sapien eget auctor. Proin dignissim viverra nisl, a pretium massa tincidunt non.
