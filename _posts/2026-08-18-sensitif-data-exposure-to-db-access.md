@@ -21,7 +21,7 @@ Untuk menangani target dengan scope wildcard (*.target.id), memantau aset secara
 
 Singkat cerita, setelah subdomain terkumpul dilakukan pemindaian otomatis dengan skrip yang saya rancang bersama rekan saya (Gemini :V) yang dikombinasikan dengan tools scanning otomatis.
 
-![images](assets/images/0001.png)
+![images](../assets/images/0001.png)
 
 Skrip ini melakukan scanning ke seluruh subdomain satu-per-satu, jadi akan memakan waktu yang cukup lama (apalagi jika subdomain-nya ada ratusan, atau bahkan ribuan). Biarkan proses pemindaian berjalan di background, pantau hasilnya lewat telegram.
 
@@ -31,21 +31,23 @@ Setelah menunggu agak lama, ada beberapa notifikasi yang masuk, beberapa tidak t
 
 Ada 1 notifikasi dari salah satu subdomain yang menunjukkan adanya file konfigurasi yang bisa diakses secara publik (`settings.json`):
 
-![images](assets/images/0002.png)
+![images](../assets/images/0002.png)
 
 Setelah di cek, isinya daftar perintah sistem yang mengekspos struktur direktori internal server, dan yang paling parah adalah perintah _mysql_ dengan ip publik, lengkap dengan username dan password-nya.
 
-![images](assets/images/0003.png)
+![images](../assets/images/0003.png)
 
 Setelah itu apa? tentu saja langsung saya coba :V, dan.. boom...! **Akses penuh** ke basis data sebagai pengguna root.
 
-![images](0004.png)
+![images](../assets/images/0004.png)
 
 ## Dampak
 
 1. Kredensial root/admin database terpapar
 2. Penyerang mendapatkan informasi struktur direktori internal
 3. Akses penuh ke sistem basis data
+
+Temuan ini membuktikan bahwa otomatisasi pemindaian menggunakan VPS dan integrasi alert instan seperti Telegram sangat membantu dalam mendeteksi celah secara cepat. Teknik otomatisasi ini biasanya hanya saya pakai untuk web yang menyediakan program VDP (_Vulnerability Disclosure Program_). 
 
 ---
 
