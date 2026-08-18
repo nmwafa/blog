@@ -33,7 +33,7 @@ Ada 1 notifikasi dari salah satu subdomain yang menunjukkan adanya file konfigur
 
 ![images](../assets/images/0002.png)
 
-Setelah di cek, isinya daftar perintah sistem yang mengekspos struktur direktori internal server, dan yang paling parah adalah perintah _mysql_ dengan ip publik, lengkap dengan username dan password-nya.
+Setelah di cek, isinya beerapa perintah sistem dengan struktur direktori internal server, dan yang paling parah adalah perintah _mysql_ dengan ip publik, lengkap dengan username dan password-nya.
 
 ![images](../assets/images/0003.png)
 
