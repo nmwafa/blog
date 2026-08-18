@@ -51,5 +51,4 @@ Temuan ini membuktikan bahwa otomatisasi pemindaian menggunakan VPS dan integras
 
 ---
 
-> [!warning]
 > Sedikit informasi bahwa kesalahan konfigurasi yang saya temukan berkaitan dengan penggunaan AI oleh programmernya. Konfigurasi bisa terekspos ke publik entah karena kesalahan manusia atau AI-nya. Intinya penggunaan AI tetap perlu review manual.
