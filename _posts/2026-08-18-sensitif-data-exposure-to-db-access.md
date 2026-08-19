@@ -1,5 +1,5 @@
 ---
-title: "Bagaimana Peretas Mendapatkan Akses Penuh ke Sistem Basis Data"
+title: "Bagaimana Peretas Mendapatkan Akses Penuh ke Server Basis Data"
 layout: post
 ---
 
