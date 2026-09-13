@@ -3,8 +3,6 @@ title: "Memahami Kerentanan HTTP Method Overriding"
 layout: post
 ---
 
-# Memahami Kerentanan HTTP Method Overriding
-
 Setiap komunikasi dalam arsitektur web modern bertumpu pada HTTP method standar seperti `GET`, `POST`, `PUT`, dan `DELETE`. Namun, dalam praktiknya, sering kali muncul kompromi teknis demi kompatibilitas klien atau jaringan. Kompromi inilah yang melahirkan fitur **HTTP Method Overriding**—sebuah mekanisme praktis yang jika tidak dipahami dengan hati-hati dapat menjadi celah keamanan (*security hole*) yang signifikan.
 
 
