@@ -6,7 +6,7 @@ layout: post
 Di balik kemampuannya menulis kode rumit, menyusun esai, hingga menjawab pertanyaan sains, *Artificial Intelligence* (AI) punya satu kelemahan unik: ia bisa berbohong dengan sangat meyakinkan. Dalam dunia komputasi, fenomena saat AI mengarang fakta, memalsukan data, atau mengutip sumber fiktif dikenal sebagai **halusinasi AI** (*AI hallucination*).
 
 
-**Apa Sebenarnya Halusinasi AI?**
+## Apa Sebenarnya Halusinasi AI?
 
 Halusinasi terjadi ketika model AI generatif (seperti *Large Language Models* / LLM) memberikan output yang terdengar logis, terstruktur, dan otoritatif, tetapi sebenarnya sepenuhnya salah atau tidak memiliki dasar faktual.
 
@@ -16,7 +16,7 @@ Contohnya bisa beragam:
 * Mengutip referensi jurnal ilmiah atau pasal hukum lengkap dengan nomor volume dan nama penulis, padahal dokumen tersebut tidak pernah ada.
 * Menjelaskan parameter fungsi pada *library software* yang sebenarnya fiktif.
 
-**Mengapa Mesin Bisa "Mengigau"?**
+## Mengapa Mesin Bisa "Mengigau"?
 
 Untuk memahaminya, penting diingat bagaimana cara kerja LLM. AI tidak "berpikir" atau memahami realitas seperti manusia; AI bekerja sebagai mesin prediksi probabilistik.
 
@@ -24,7 +24,7 @@ Untuk memahaminya, penting diingat bagaimana cara kerja LLM. AI tidak "berpikir"
 * **Bias dan Kualitas Data Latih:** Data internet mengandung banyak kontradiksi, spekulasi, dan kesalahan factual. Ketika data tersebut diserap, batas antara fakta dan fiksi menjadi kabur.
 * **Overconfidence (*Sycophancy*):** Model dilatih untuk bersikap kooperatif dan membantu. Terkadang, daripada mengaku "tidak tahu", AI memilih menyusun tebakan terbaik yang terdengar sangat meyakinkan.
 
-**Dampak dan Risikonya**
+## Dampak dan Risikonya
 
 Halusinasi AI bukan sekadar bahan lelucon. Di ranah profesional, dampaknya bisa nyata:
 
@@ -35,7 +35,7 @@ Halusinasi AI bukan sekadar bahan lelucon. Di ranah profesional, dampaknya bisa 
 | **Software Development** | AI menyarankan penggunaan paket pihak ketiga (*package/library*) fiktif yang rentan disusupi penyerang melalui teknik *typosquatting* atau *slopsquatting*. |
 | **Akademik & Jurnalistik** | Penyebaran disinformasi dan erosi kredibilitas tulisan akibat sitasi palsu. |
 
-**Cara Menyikapi AI yang Suka Berhalusinasi**
+## Cara Menyikapi AI yang Suka Berhalusinasi
 
 AI tetaplah alat bantu produktivitas yang luar biasa, asalkan digunakan dengan pendekatan kritis:
 
