@@ -6,7 +6,7 @@ layout: post
 Setiap komunikasi dalam arsitektur web modern bertumpu pada HTTP method standar seperti `GET`, `POST`, `PUT`, dan `DELETE`. Namun, dalam praktiknya, sering kali muncul kompromi teknis demi kompatibilitas klien atau jaringan. Kompromi inilah yang melahirkan fitur **HTTP Method Overriding**—sebuah mekanisme praktis yang jika tidak dipahami dengan hati-hati dapat menjadi celah keamanan (*security hole*) yang signifikan.
 
 
-### Apa Itu HTTP Method Overriding?
+## Apa Itu HTTP Method Overriding?
 
 Secara historis, form HTML standar (`<form>`) hanya mendukung dua method utama: `GET` dan `POST`. Selain itu, banyak proxy perusahaan lawas, firewall, atau klien HTTP versi lama yang menolak request dengan verb non-standar seperti `PUT`, `PATCH`, atau `DELETE`.
 
@@ -20,7 +20,7 @@ Override umumnya dikirimkan melalui dua jalur:
 Ketika server menerima request tersebut, framework akan memodifikasi method internalnya dari `POST` menjadi method yang diminta sebelum request diteruskan ke handler atau controller.
 
 
-### Dalam Kondisi Seperti Apa Fitur Ini Aktif di Server?
+## Dalam Kondisi Seperti Apa Fitur Ini Aktif di Server?
 
 Header atau parameter override **tidak bekerja otomatis di setiap server**. Protokol HTTP dan server web statis mentah (seperti NGINX atau Apache bawaan) tidak mengubah method secara mandiri. Fitur ini hanya akan berfungsi jika server memenuhi kondisi-kondisi berikut:
 
@@ -40,7 +40,7 @@ Reverse proxy, API Gateway, atau Ingress Controller (seperti NGINX, HAProxy, ata
 Server sengaja dikonfigurasi demikian untuk mendukung formulir HTML murni (tanpa fetch/AJAX) atau beroperasi di balik jaringan perusahaan yang memblokir method selain `GET`/`POST`.
 
 
-### Mengapa Fitur Ini Bisa Menjadi Kerentanan?
+## Mengapa Fitur Ini Bisa Menjadi Kerentanan?
 
 Celah keamanan muncul akibat adanya **ketidaksinkronan interpretasi (*parsing asymmetry*)** antara lapisan penjaga (WAF/Reverse Proxy/API Gateway) dan lapisan eksekusi (Backend Framework).
 
@@ -63,7 +63,7 @@ Skenario eksploitasi yang kerap terjadi:
 * **Cache Poisoning:** Jika reverse proxy atau CDN menyimpan cache berdasarkan kombinasi URL dan HTTP method asli tanpa memperhitungkan header override, respons hasil modifikasi data dapat tersimpan dan disajikan secara keliru ke pengguna lain.
 
 
-### Contoh Skenario Serangan
+## Contoh Skenario Serangan
 
 Misalkan sebuah API internal membatasi akses pada resource sensitif:
 
@@ -92,7 +92,7 @@ Content-Type: application/json
 Jika gateway meloloskannya karena menganggap request tersebut sekadar `POST` biasa, backend yang memiliki middleware override aktif akan mengeksekusi fungsi hapus pengguna nomor `42` tanpa hambatan.
 
 
-### Langkah Mitigasi & Pengamanan
+## Langkah Mitigasi & Pengamanan
 
 Untuk meminimalkan risiko eksploitasi, terapkan prinsip pertahanan berlapis berikut:
 
