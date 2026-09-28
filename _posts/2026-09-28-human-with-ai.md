@@ -259,7 +259,9 @@ Kalau saya sederhanakan seluruh perubahan ini:
 ### Era sebelum AI
 
 > Information = scarce
+> 
 > Execution   = expensive
+> 
 > Human labor = valuable
 
 ### Era AI
