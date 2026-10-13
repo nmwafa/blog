@@ -4,10 +4,10 @@ layout: post
 categories: media
 ---
 
-![images](../assets/images/0006.png)
-
-
 Ketika kita mengetik `https://example.com` di browser, halaman biasanya muncul dalam hitungan detik. Di balik proses sederhana itu, komputer perlu mencari alamat server, membuka koneksi, menyepakati enkripsi, mengirim permintaan, dan menerima data. Setiap tahap melibatkan protokol dengan tugas yang berbeda.
+
+
+![images](../assets/images/0006.png)
 
 Artikel ini membedah proses tersebut dari sudut pandang jaringan (*low level*), tanpa harus masuk terlalu jauh ke rumus kriptografi atau detail implementasi kernel. Sebagai rujukan, saya sudah meyiapkan file **`https.pcap`** yang berisi tangkapan paket https. Untuk yang ingin mencobanya bisa download [disini](https://limewire.com/d/F8opX#Ti6X0uT5zL) lalu buka dengan **Wireshark**.
 
