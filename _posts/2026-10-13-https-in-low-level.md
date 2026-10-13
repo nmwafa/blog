@@ -78,15 +78,7 @@ DNS dapat meminta beberapa jenis record. Dua yang umum adalah:
 
 Alurnya dapat digambarkan seperti ini:
 
-```mermaid
-sequenceDiagram
-    participant C as Client / Browser
-    participant D as DNS Resolver
-    participant S as Server
-    C->>D: Tanya A dan AAAA untuk example.com
-    D-->>C: Daftar alamat IP
-    C->>S: Mulai koneksi ke salah satu IP
-```
+![images](../assets/images/0007.png)
 
 ### Apa yang terlihat pada `https.pcap`?
 
@@ -109,15 +101,7 @@ Setelah alamat tujuan diketahui, klien perlu membentuk koneksi. Untuk HTTPS berb
 
 TCP membantu data sampai **berurutan** dan dapat mendeteksi bagian yang hilang agar dikirim ulang. Sebelum bertukar data aplikasi, kedua pihak melakukan *three-way handshake*:
 
-```mermaid
-sequenceDiagram
-    participant C as Client 172.21.64.28:39790
-    participant S as Server 104.20.23.154:443
-    C->>S: SYN
-    S-->>C: SYN + ACK
-    C->>S: ACK
-    Note over C,S: Koneksi TCP siap dipakai
-```
+![images](../assets/images/0008.png)
 
 Ketiga pesan ini bukan sekadar formalitas. Keduanya menyinkronkan **sequence number**, yaitu penanda posisi byte dalam aliran TCP, sehingga penerima tahu data mana yang sudah diterima. Pesan `ACK` mengonfirmasi penerimaan data; **TCP window** membantu mengatur berapa banyak data yang dapat dikirim sebelum perlu menunggu konfirmasi berikutnya.
 
@@ -145,19 +129,7 @@ TCP yang sukses belum berarti HTTP boleh langsung dikirim sebagai HTTPS. Klien d
 
 Diagram berikut adalah penyederhanaan *full handshake* TLS 1.3:
 
-```mermaid
-sequenceDiagram
-    participant C as Browser
-    participant S as HTTPS Server
-    C->>S: ClientHello + key share
-    S-->>C: ServerHello + key share
-    Note over C,S: Kunci handshake dihitung
-    S-->>C: EncryptedExtensions + Certificate + CertificateVerify + Finished (terenkripsi)
-    C->>S: Finished (terenkripsi)
-    Note over C,S: Data aplikasi dilindungi TLS
-    C->>S: HTTP request (terenkripsi)
-    S-->>C: HTTP response (terenkripsi)
-```
+![images](../assets/images/0009.png)
 
 **Apa fungsi sertifikat?** Sertifikat membantu klien memastikan bahwa kunci publik yang diterima benar-benar terkait dengan identitas domain yang dituju, melalui rantai kepercayaan otoritas sertifikat (*Certificate Authority*). Enkripsi saja tidak cukup apabila klien tidak dapat memastikan siapa pihak di ujung koneksi.
 
