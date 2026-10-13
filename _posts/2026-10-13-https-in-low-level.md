@@ -46,20 +46,7 @@ HTTP bersifat *stateless*: setiap permintaan mempunyai makna tersendiri. Namun a
 
 Perbedaan paling penting bukan pada tujuan komunikasinya, melainkan pada **perlindungan ketika pesan dikirim**.
 
-```text
-HTTP/1.1 tanpa TLS                    HTTPS (HTTP/1.1 atau HTTP/2)
-┌──────────────────────┐               ┌──────────────────────┐
-│ HTTP request/response│               │ HTTP request/response│
-├──────────────────────┤               ├──────────────────────┤
-│ TCP                  │               │ TLS (enkripsi)       │
-├──────────────────────┤               ├──────────────────────┤
-│ IP                   │               │ TCP                  │
-├──────────────────────┤               ├──────────────────────┤
-│ Ethernet / Wi-Fi     │               │ IP                   │
-└──────────────────────┘               ├──────────────────────┤
-                                       │ Ethernet / Wi-Fi     │
-                                       └──────────────────────┘
-```
+![images](https://www.oreilly.com/api/v2/epubs/1565925092/files/httpatomoreillycomsourceoreillyimages96902.png)
 
 Pada HTTP biasa, pihak yang mampu memantau lalu lintas jaringan berpotensi membaca atau mengubah isi komunikasi. Pada **HTTPS**, HTTP berjalan di dalam koneksi yang dilindungi **TLS (Transport Layer Security)**. TLS menyediakan kerahasiaan, pemeriksaan integritas, dan autentikasi server berbasis sertifikat, selama validasi sertifikat berjalan dengan benar.
 
