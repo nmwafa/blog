@@ -1,6 +1,7 @@
 ---
 title: "Bagaimana Protokol HTTP(S) Bekerja hingga Low Level"
 layout: post
+categories: media
 ---
 
 ![images](../assets/images/0006.png)
